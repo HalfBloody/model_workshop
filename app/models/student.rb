@@ -10,5 +10,8 @@
 #
 
 class Student < ActiveRecord::Base
+  belongs_to :course
+  has_many :homeworks
+
   validates :age, presence: true
 end
